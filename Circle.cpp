@@ -3,7 +3,7 @@
 using namespace std;
 
 class Circle {
-	const double pi = 3.1415926535;
+	const static double pi = 3.1415926535;
 	double radius;
 public:
 	Circle(double);
@@ -37,6 +37,6 @@ int main() {
 	cout << "lindsay's area: " << lindsay.area() << "\n";
 	cout << "lindsay's circum: " << lindsay.circum() << "\n";
 	cout << "wallace's area: " << wallace.area() << "\n";
-	cout << "wallace's circum: " << wallace.circum();
+	cout << "wallace's circum: " << wallace.circum() << endl;
 	return 0;
 }
